@@ -6,16 +6,219 @@
     --font-size-body-copy: 18px;
 }
 
-* {
-    font-family: 'Bai Jamjuree', sans-serif;
-    margin: 0;
-}
+@media screen and (max-width: 1439px) {
+    * {
+        font-family: 'Bai Jamjuree', sans-serif;
+        margin: 0;
+    }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
+    body {
+        max-width: 360px;
+        margin: auto;
+    }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    header {
+        background-image: url('./images/bg-header-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: 50% 0%;
+        height: 363px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        color: var(--dark-grayish-blue);        
+        margin: auto;
+        font-size: xx-large;
+        text-align: center;
+        margin-bottom: 16px;
+        max-width: 320px;
+    }
+
+    .body-copy {
+        color: var(--grayish-blue);
+        text-align: center;
+        line-height: 1.5;
+        max-width: 310px;
+        margin: auto;
+    }
+
+    .download-buttons {
+        display: grid;
+        align-content: space-between;
+        max-width: 310px;
+        margin: auto;
+        margin-top: 40px;
+        height: 128px;
+    }
+
+    button {
+        border: none;
+        color: #FFFFFF;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: initial;
+        border-radius: 32px;
+        border-bottom-style: outset;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    .iOS-button {
+        background-color: var(--strong-cyan);
+        border-bottom-color: var(--strong-cyan);
+        box-shadow: 0px 2px 16px var(--strong-cyan);
+    }
+
+    .Mac-button {
+        background-color: var(--light-blue);
+        border-bottom-color: var(--light-blue);
+        box-shadow: 0px 2px 16px var(--light-blue)
+    }
+
+    .snippets {
+        margin: auto;
+        margin-top: 160px;
+        margin-bottom: 80px;
+        max-width: 320px;
+    }
+
+    h2 {
+        color: var(--dark-grayish-blue);
+        text-align: center;
+        margin-bottom: 16px;
+        font-size: xx-large;
+    }
+
+    .features {
+        max-width: 320px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 160px;
+    }
+
+    .image-computer {
+        width: 100%;
+    }
+
+    .features-preview {
+        margin-top: 48px;
+    }
+
+    .feature {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        color: var(--dark-grayish-blue);
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .devices {
+        margin: auto;
+        margin-bottom: 160px;
+        max-width: 320px;
+    }
+
+    .image-devices {
+        width: 100%;
+        margin-top: 64px;
+    }
+
+    .workflow {
+        max-width: 320px;
+        margin: auto;
+        margin-bottom: 160px;
+    }
+
+    .tool {
+        display: grid;
+    }
+
+    .icon {
+        justify-self: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .companies {
+        max-width: 320px;
+        margin: auto;
+        margin-bottom: 160px;
+    }
+
+    .company {
+        display: grid;
+        justify-content: center;
+    }
+
+    .company-logo {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .outro {
+        margin-bottom: 160px;
+    }
+
+    footer {
+        max-width: 360px;
+    }
+
+    .footer-links {
+        background-color: #F5F6F8;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 16px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .logo-footer > img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 24px;
+    }
+
+    .footer-menu p {
+        margin-bottom: 24px;
+    }
+
+    .footer-menu a {
+        text-decoration: none;
+        color: var(--dark-grayish-blue);
+    }
+
+    .footer-menu a:visited {
+        text-decoration: none;
+    }
+
+    .social-media-icons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        grid-column-gap: 40px;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: var(--grayish-blue);
+    }
+
+    .attribution a {
+        color: var(--dark-grayish-blue);
+        text-decoration: none;
+    }
+
+    .attribution a:visited {
+        text-decoration: none;
+    }
 }
